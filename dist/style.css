@@ -271,6 +271,7 @@ p.date {
   justify-content: space-between;
   overflow: scroll;
   gap: 30px;
+  margin-block-end: 50px;
 }
 .main-info__mySkills img {
   width: 50px;
