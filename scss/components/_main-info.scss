@@ -105,7 +105,7 @@
     &__mySkills {
         display: flex;
         justify-content: space-between;
-        overflow: scroll;
+        overflow-y: auto;
         gap: 30px;
         margin-block-end: 50px;
     }
