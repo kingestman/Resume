@@ -181,6 +181,29 @@
         justify-content: center;
         border-radius: 8px;
     }
+
+    &__experiences {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(u.rem(340), 1fr));
+        gap: 20px;
+    }
+
+    &__experience {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        border-radius: 8px;
+        border: 2px solid #444;
+    }
+
+    &__experienceeInfo {
+        padding: 20px 25px;
+    }
+
+    &__experienceDate {
+        font-size: 0.9rem;
+        color: #777;
+    }
 }
 
 @media (max-width: u.em(1300)) {
