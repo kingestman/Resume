@@ -428,18 +428,26 @@ p.date {
   }
   .nav {
     position: absolute;
-    margin: 0;
+    margin: 0 !important;
     height: 90vh;
     right: 20px;
     top: 50%;
     transform: translate(0, -50%);
     width: 50px !important;
+    justify-content: end !important;
+  }
+  .nav__upperNav {
+    display: none !important;
   }
   .nav__upperNavLink,
   .nav__forward,
   .nav__back {
     width: 30px !important;
     height: 30px !important;
+  }
+  .main-info__experience {
+    height: auto;
+    overflow: hidden;
   }
 }
 .nav {
