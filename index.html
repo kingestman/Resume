@@ -1,419 +1,349 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="dist/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <script src="js/main.js" defer></script>
-        <title>Samir Mokhammad - CV</title>
-    </head>
-    <body>
-        <main id="main" class="main">
-            <section class="main-info">
-                <div class="main-info__photoSection">
-                    <div class="main-info__photoSection-container">
-                        <img
-                            src="./img/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
-                            alt="My photo"
-                            width="180"
-                            height="180"
-                            class="main-info__photo"
-                        />
-                        <h2 class="photoSection">Samir Mokhammad</h2>
-                        <p class="sub-text">Student</p>
-                    </div>
-                    <div class="main-info__socialLinks">
-                        <a
-                            href="https://www.facebook.com/samirmokhammad/"
-                            class="main-info__socialLink"
-                        >
-                            <img
-                                class="main-info__socialLink"
-                                src="./img/facebook-176-svgrepo-com.svg"
-                                alt="Facebook link"
-                                width="30"
-                                height="30"
-                            />
-                        </a>
-                        <a
-                            href="https://github.com/kingestman"
-                            class="main-info__socialLink"
-                        >
-                            <img
-                                src="./img/github-142-svgrepo-com.svg"
-                                alt="GitHub link"
-                                width="30"
-                                height="30"
-                                style="
-                                    box-sizing: content-box;
-                                    padding-right: 5.5px;
-                                "
-                        /></a>
-                        <a
-                            href="mailto:samirmokhammad13@gmail.com"
-                            class="main-info__socialLink"
-                            ><img
-                                src="./img/gmail-svgrepo-com.svg"
-                                alt="Gmail link"
-                                width="30"
-                                height="30"
-                            />
-                        </a>
-                    </div>
-                    <div class="main-info__downloadCv">
-                        <button>Pobierz CV</button>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+    <title>Samir Mokhammad - CV</title>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <section class="main-info">
+        <div class="main-info__photoSection">
+          <div class="main-info__photoSection-container">
+            <img
+              src="./img/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+              alt="My photo"
+              width="180"
+              height="180"
+              class="main-info__photo"
+            />
+            <h2 class="photoSection">Samir Mokhammad</h2>
+            <p class="sub-text">Student</p>
+          </div>
+          <div class="main-info__socialLinks">
+            <a
+              href="https://www.facebook.com/samirmokhammad/"
+              class="main-info__socialLink"
+            >
+              <img
+                class="main-info__socialLink"
+                src="./img/facebook-176-svgrepo-com.svg"
+                alt="Facebook link"
+                width="30"
+                height="30"
+              />
+            </a>
+            <a
+              href="https://github.com/kingestman"
+              class="main-info__socialLink"
+            >
+              <img
+                src="./img/github-142-svgrepo-com.svg"
+                alt="GitHub link"
+                width="30"
+                height="30"
+                style="box-sizing: content-box; padding-right: 5.5px"
+            /></a>
+            <a
+              href="mailto:samirmokhammad13@gmail.com"
+              class="main-info__socialLink"
+              ><img
+                src="./img/gmail-svgrepo-com.svg"
+                alt="Gmail link"
+                width="30"
+                height="30"
+              />
+            </a>
+          </div>
+          <div class="main-info__downloadCv">
+            <button>
+              <a href="https://github.com/kingestman/Resume" target="_blank"
+                >Pobierz CV</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="main-info__generalInfo">
+          <div class="main-info__intro active" id="intro">
+            <div class="main-info__introInfo">
+              <h1>Samir Mokhamamd</h1>
+              <p class="sub-text-big">Student</p>
+            </div>
+          </div>
+          <div class="main-info__aboutMe" id="aboutMe">
+            <h2>O<span class="highlighted"> Mnie</span></h2>
+            <div class="main-info__aboutMeContainer">
+              <p>
+                Jestem uczniem 3 klasy o profilu programistycznym w ZSTiO nr 2 w
+                Katowicach. Programowanie od zawsze jest moją pasją, dlatego od
+                kilku lat systematycznie rozwijam swoje umiejętności i poszerzam
+                wiedzę. Lubię rozwiązywać złożone zadania, szukać nowych
+                rozwiązań oraz stale udoskonalać jakość kodu i realizowanych
+                projektów.
+              </p>
+              <ul>
+                <li><span class="highlighted">Wiek</span> 16</li>
+                <li><span class="highlighted">Rezydencja</span>Polska</li>
+                <li>
+                  <span class="highlighted">Adres</span>Techników 5, Katowice
+                </li>
+                <li>
+                  <span class="highlighted">Email</span
+                  >samirmokhammad13@gmail.com
+                </li>
+                <li><span class="highlighted">Telefon</span>+48570191955</li>
+              </ul>
+            </div>
+            <h3>Doświadczenie</h3>
+            <div class="main-info__experiences">
+              <div class="main-info__experience">
+                <div class="main-info__experienceInfo">
+                  <h4>Kurier w firmie Stuart</h4>
+                  <p class="main-info__experienceDate">
+                    Lipiec 2025 - Sierpień 2025
+                  </p>
                 </div>
-                <div class="main-info__genralInfo">
-                    <div class="main-info__intro active" id="intro">
-                        <div class="main-info__introInfo">
-                            <h1>Samir Mokhamamd</h1>
-                            <p class="sub-text-big">Student</p>
-                        </div>
-                    </div>
-                    <div class="main-info__aboutMe" id="aboutMe">
-                        <h2>O<span class="highlighted"> Mnie</span></h2>
-                        <div class="main-info__aboutMeContainer">
-                            <p>
-                                Jestem uczniem 3 klasy o profilu
-                                programistycznym w ZSTiO nr 2 w Katowicach.
-                                Programowanie od zawsze jest moją pasją, dlatego
-                                od kilku lat systematycznie rozwijam swoje
-                                umiejętności i poszerzam wiedzę. Lubię
-                                rozwiązywać złożone zadania, szukać nowych
-                                rozwiązań oraz stale udoskonalać jakość kodu i
-                                realizowanych projektów.
-                            </p>
-                            <ul>
-                                <li>
-                                    <span class="highlighted">Wiek</span> 16
-                                </li>
-                                <li>
-                                    <span class="highlighted">Rezydencja</span
-                                    >Polska
-                                </li>
-                                <li>
-                                    <span class="highlighted">Adres</span
-                                    >Techników 5, Katowice
-                                </li>
-                                <li>
-                                    <span class="highlighted">Email</span
-                                    >samirmokhammad13@gmail.com
-                                </li>
-                                <li>
-                                    <span class="highlighted">Telefon</span
-                                    >+48570191955
-                                </li>
-                            </ul>
-                        </div>
-                        <h3>Doświadczenie</h3>
-                        <div class="main-info__experiences">
-                            <div class="main-info__experience">
-                                <div class="main-info__experienceeInfo">
-                                    <h4>Kurier w firmie Stuart</h4>
-                                    <p class="main-info__experienceDate">
-                                        Lipiec 2025 - Sierpień 2025
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="main-info__experience">
-                                <div class="main-info__experienceeInfo">
-                                    <h4>
-                                        Uczestnik międzynarodowego projektu
-                                        ekologicznego ERASMUS + GLOCKERS
-                                    </h4>
-                                    <p class="main-info__experienceDate">
-                                        Wrzesień 2024 - obecnie
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-info__resume" id="resume">
-                        <h2>Resume</h2>
-                        <div class="main-info__resumeContainer">
-                            <div>
-                                <h3>Edukacja</h3>
-                                <h4 class="education">
-                                    ZSTiO Nr 2 w Katowicach
-                                    <span class="highlighted">2023</span>
-                                </h4>
-                                <p
-                                    style="
-                                        font-size: 14.5px;
-                                        margin-block-end: 15px;
-                                    "
-                                >
-                                    Rozpocząłem naukę w 2023 roku i obecnie uczę
-                                    się w 3 klasie o profilu programistycznym,
-                                    systematycznie rozwijając umiejętności
-                                    związane z tworzeniem oprogramowania.
-                                </p>
-                                <h4 class="education">
-                                    Szkoła Podstawowa nr 15
-                                    <span class="highlighted">2022</span>
-                                </h4>
-                                <p
-                                    style="
-                                        font-size: 14.5px;
-                                        margin-block-end: 15px;
-                                    "
-                                >
-                                    Uczęszczałem do 8 klasy, którą ukończyłem z
-                                    wyróżnieniem (czerwony pasek).
-                                </p>
-                                <h4 class="education">
-                                    Kharkiv lyceum № 161 "Impulse"
-                                    <span class="highlighted">2014</span>
-                                </h4>
-                                <p style="font-size: 14.5px">
-                                    Uczęszczałem do szkoły podstawowej na
-                                    Ukrainie, zdobywając solidne podstawy wiedzy
-                                    ogólnej i rozwijając pierwsze
-                                    zainteresowania technologią. Ostatnie dwie
-                                    klasy (8 i 9) realizowałem równocześnie w
-                                    polskiej i ukraińskiej szkole, a edukację
-                                    zakończyłem z powodzeniem.
-                                </p>
-                            </div>
-                            <div>
-                                <h3>
-                                    Coding
-                                    <span class="highlighted">Skills</span>
-                                </h3>
-                                <div class="main-info__skill">
-                                    <div class="main-info__skillHeader">
-                                        <h4>HTML/CSS</h4>
-                                        <span
-                                            class="percent"
-                                            style="color: #f4f4f4"
-                                            >95%</span
-                                        >
-                                    </div>
-                                    <div class="main-info__bar">
-                                        <div
-                                            class="main-info__fill"
-                                            style="width: 95%"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div class="main-info__skill">
-                                    <div class="main-info__skillHeader">
-                                        <h4>SASS</h4>
-                                        <span
-                                            class="percent"
-                                            style="color: #f4f4f4"
-                                            >90%</span
-                                        >
-                                    </div>
-                                    <div class="main-info__bar">
-                                        <div
-                                            class="main-info__fill"
-                                            style="width: 90%"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div class="main-info__skill">
-                                    <div class="main-info__skillHeader">
-                                        <h4>JS</h4>
-                                        <span
-                                            class="percent"
-                                            style="color: #f4f4f4"
-                                            >75%</span
-                                        >
-                                    </div>
-                                    <div class="main-info__bar">
-                                        <div
-                                            class="main-info__fill"
-                                            style="width: 75%"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div class="main-info__skill">
-                                    <div class="main-info__skillHeader">
-                                        <h4>SQL</h4>
-                                        <span
-                                            class="percent"
-                                            style="color: #f4f4f4"
-                                            >50%</span
-                                        >
-                                    </div>
-                                    <div class="main-info__bar">
-                                        <div
-                                            class="main-info__fill"
-                                            style="width: 50%"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div class="main-info__skill">
-                                    <div class="main-info__skillHeader">
-                                        <h4>PHP</h4>
-                                        <span
-                                            class="percent"
-                                            style="color: #f4f4f4"
-                                            >50%</span
-                                        >
-                                    </div>
-                                    <div class="main-info__bar">
-                                        <div
-                                            class="main-info__fill"
-                                            style="width: 50%"
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>
-                            Moje <span class="highlighted">Umiejętności</span>
-                        </h3>
-                        <div class="main-info__mySkills">
-                            <img
-                                src="./img/html-5-svgrepo-com.svg"
-                                alt="html"
-                                width="50px"
-                            />
-                            <img src="./img/css-3-svgrepo-com.svg" alt="css" />
-                            <img src="./img/sass-svgrepo-com.svg" alt="sass" />
-                            <img src="./img/js-svgrepo-com.svg" alt="js" />
-                            <img
-                                src="./img/react-svgrepo-com.svg"
-                                alt="react"
-                            />
-                            <img
-                                src="./img/sql-database-sql-azure-svgrepo-com.svg"
-                                alt="sql"
-                            />
-                            <img src="./img/php-svgrepo-com.svg" alt="php" />
-                            <img
-                                src="./img/python-svgrepo-com.svg"
-                                alt="python"
-                            />
-                            <img
-                                src="./img/c-sharp-svgrepo-com.svg"
-                                alt="C Sharp"
-                            />
-                        </div>
-                        <h3>Certyfikaty</h3>
-                        <div class="main-info__certificates">
-                            <div class="main-info__certificate">
-                                <div class="main-info__certificateLogoC">
-                                    <img
-                                        src="./img/codercoder-logo-transp-bg.png"
-                                        alt="coder-coder logo"
-                                        class="main-info__certificateLogo"
-                                        width="120"
-                                        height="144"
-                                    />
-                                </div>
-                                <div class="main-info__certificateInfo">
-                                    <h4>
-                                        BASIC Course | Responsive Design for
-                                        Beginners
-                                    </h4>
-                                    <p class="serialNumber">
-                                        Numer seryjny: cert_m1w4k7wL
-                                    </p>
-                                    <p class="date">2024-10-19</p>
-                                </div>
-                            </div>
-                            <div class="main-info__certificate">
-                                <div class="main-info__certificateLogoC">
-                                    <img
-                                        src="./img/codercoder-logo-transp-bg.png"
-                                        alt="coder-coder logo"
-                                        class="main-info__certificateLogo"
-                                        width="120"
-                                        height="144"
-                                    />
-                                </div>
-                                <div class="main-info__certificateInfo">
-                                    <h4>
-                                        PREMIUM Course | Responsive Design for
-                                        Beginners
-                                    </h4>
-                                    <p class="serialNumber">
-                                        Numer seryjny: cert_j7dd5g5b
-                                    </p>
-                                    <p class="date">2024-11-02</p>
-                                </div>
-                            </div>
-                            <div class="main-info__certificate">
-                                <div class="main-info__certificateLogoC">
-                                    <img
-                                        src="./img/codercoder-logo-transp-bg.png"
-                                        alt="coder-coder logo"
-                                        class="main-info__certificateLogo"
-                                        width="120"
-                                        height="144"
-                                    />
-                                </div>
-                                <div class="main-info__certificateInfo">
-                                    <h4>
-                                        ULTIMATE Course | Responsive Design for
-                                        Beginners
-                                    </h4>
-                                    <p class="serialNumber">
-                                        Numer seryjny: cert_nxc29s3w
-                                    </p>
-                                    <p class="date">2024-11-17</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="main-info__experience">
+                <div class="main-info__experienceInfo">
+                  <h4>
+                    Uczestnik międzynarodowego projektu ekologicznego ERASMUS +
+                    GLOCKERS
+                  </h4>
+                  <p class="main-info__experienceDate">
+                    Wrzesień 2024 - obecnie
+                  </p>
                 </div>
-            </section>
-            <section class="nav">
-                <div class="nav__upperNav">
-                    <img
-                        src="./img/home-1-svgrepo-com.svg"
-                        alt="Home"
-                        class="nav__upperNavLink"
-                        width="30"
-                        height="30"
-                        id="homeLink"
-                    />
-                    <img
-                        src="./img/person-silhouette-svgrepo-com.svg"
-                        alt="About Me"
-                        class="nav__upperNavLink"
-                        width="30"
-                        height="30"
-                        id="aboutMeLink"
-                    />
-                    <img
-                        src="./img/graduation-hat-svgrepo-com.svg"
-                        alt="Resume"
-                        class="nav__upperNavLink"
-                        width="30"
-                        height="30"
-                        id="resumeLink"
-                    />
+              </div>
+            </div>
+          </div>
+          <div class="main-info__resume" id="resume">
+            <h2>Resume</h2>
+            <div class="main-info__resumeContainer">
+              <div>
+                <h3>Edukacja</h3>
+                <h4 class="education">
+                  ZSTiO Nr 2 w Katowicach
+                  <span class="highlighted">2023</span>
+                </h4>
+                <p style="font-size: 14.5px; margin-block-end: 15px">
+                  Rozpocząłem naukę w 2023 roku i obecnie uczę się w 3 klasie o
+                  profilu programistycznym, systematycznie rozwijając
+                  umiejętności związane z tworzeniem oprogramowania.
+                </p>
+                <h4 class="education">
+                  Szkoła Podstawowa nr 15
+                  <span class="highlighted">2022</span>
+                </h4>
+                <p style="font-size: 14.5px; margin-block-end: 15px">
+                  Uczęszczałem do 8 klasy, którą ukończyłem z wyróżnieniem
+                  (czerwony pasek).
+                </p>
+                <h4 class="education">
+                  Kharkiv lyceum № 161 "Impulse"
+                  <span class="highlighted">2014</span>
+                </h4>
+                <p style="font-size: 14.5px">
+                  Uczęszczałem do szkoły podstawowej na Ukrainie, zdobywając
+                  solidne podstawy wiedzy ogólnej i rozwijając pierwsze
+                  zainteresowania technologią. Ostatnie dwie klasy (8 i 9)
+                  realizowałem równocześnie w polskiej i ukraińskiej szkole, a
+                  edukację zakończyłem z powodzeniem.
+                </p>
+              </div>
+              <div>
+                <h3>
+                  Coding
+                  <span class="highlighted">Skills</span>
+                </h3>
+                <div class="main-info__skill">
+                  <div class="main-info__skillHeader">
+                    <h4>HTML/CSS</h4>
+                    <span class="percent" style="color: #f4f4f4">95%</span>
+                  </div>
+                  <div class="main-info__bar">
+                    <div class="main-info__fill" style="width: 95%"></div>
+                  </div>
                 </div>
-                <div class="nav__lowerNav">
-                    <img
-                        src="./img/right-arrow-backup-2-svgrepo-com.svg"
-                        alt="forward"
-                        class="nav__forward"
-                        width="40"
-                        height="40"
-                        id="next"
-                    />
-                    <img
-                        src="./img/left-arrow-backup-2-svgrepo-com.svg"
-                        alt="back"
-                        class="nav__back"
-                        width="40"
-                        height="40"
-                        id="previous"
-                    />
+                <div class="main-info__skill">
+                  <div class="main-info__skillHeader">
+                    <h4>SASS</h4>
+                    <span class="percent" style="color: #f4f4f4">90%</span>
+                  </div>
+                  <div class="main-info__bar">
+                    <div class="main-info__fill" style="width: 90%"></div>
+                  </div>
                 </div>
-            </section>
-        </main>
-    </body>
+                <div class="main-info__skill">
+                  <div class="main-info__skillHeader">
+                    <h4>JS</h4>
+                    <span class="percent" style="color: #f4f4f4">75%</span>
+                  </div>
+                  <div class="main-info__bar">
+                    <div class="main-info__fill" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="main-info__skill">
+                  <div class="main-info__skillHeader">
+                    <h4>SQL</h4>
+                    <span class="percent" style="color: #f4f4f4">50%</span>
+                  </div>
+                  <div class="main-info__bar">
+                    <div class="main-info__fill" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="main-info__skill">
+                  <div class="main-info__skillHeader">
+                    <h4>PHP</h4>
+                    <span class="percent" style="color: #f4f4f4">50%</span>
+                  </div>
+                  <div class="main-info__bar">
+                    <div class="main-info__fill" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Moje <span class="highlighted">Umiejętności</span></h3>
+            <div class="main-info__mySkills">
+              <img src="./img/html-5-svgrepo-com.svg" alt="html" width="50px" />
+              <img src="./img/css-3-svgrepo-com.svg" alt="css" />
+              <img src="./img/sass-svgrepo-com.svg" alt="sass" />
+              <img src="./img/js-svgrepo-com.svg" alt="js" />
+              <img src="./img/react-svgrepo-com.svg" alt="react" />
+              <img
+                src="./img/sql-database-sql-azure-svgrepo-com.svg"
+                alt="sql"
+              />
+              <img src="./img/php-svgrepo-com.svg" alt="php" />
+              <img src="./img/python-svgrepo-com.svg" alt="python" />
+              <img src="./img/c-sharp-svgrepo-com.svg" alt="C Sharp" />
+            </div>
+            <h3>Certyfikaty</h3>
+            <div class="main-info__certificates">
+              <div class="main-info__certificate">
+                <div class="main-info__certificateLogoC">
+                  <img
+                    src="./img/codercoder-logo-transp-bg.png"
+                    alt="coder-coder logo"
+                    class="main-info__certificateLogo"
+                    width="120"
+                    height="144"
+                  />
+                </div>
+                <div class="main-info__certificateInfo">
+                  <h4>
+                    <a
+                      href="https://github.com/kingestman/Resume/tree/main/certificates"
+                      target="_blank"
+                      >BASIC Course | Responsive Design for Beginners</a
+                    >
+                  </h4>
+                  <p class="serialNumber">Numer seryjny: cert_m1w4k7wL</p>
+                  <p class="date">2024-10-19</p>
+                </div>
+              </div>
+              <div class="main-info__certificate">
+                <div class="main-info__certificateLogoC">
+                  <img
+                    src="./img/codercoder-logo-transp-bg.png"
+                    alt="coder-coder logo"
+                    class="main-info__certificateLogo"
+                    width="120"
+                    height="144"
+                  />
+                </div>
+                <div class="main-info__certificateInfo">
+                  <h4>
+                    <a
+                      href="https://github.com/kingestman/Resume/tree/main/certificates"
+                      target="_blank"
+                      >PREMIUM Course | Responsive Design for Beginners</a
+                    >
+                  </h4>
+                  <p class="serialNumber">Numer seryjny: cert_j7dd5g5b</p>
+                  <p class="date">2024-11-02</p>
+                </div>
+              </div>
+              <div class="main-info__certificate">
+                <div class="main-info__certificateLogoC">
+                  <img
+                    src="./img/codercoder-logo-transp-bg.png"
+                    alt="coder-coder logo"
+                    class="main-info__certificateLogo"
+                    width="120"
+                    height="144"
+                  />
+                </div>
+                <div class="main-info__certificateInfo">
+                  <h4>
+                    <a
+                      href="https://github.com/kingestman/Resume/tree/main/certificates"
+                      target="_blank"
+                      >ULTIMATE Course | Responsive Design for Beginners</a
+                    >
+                  </h4>
+                  <p class="serialNumber">Numer seryjny: cert_nxc29s3w</p>
+                  <p class="date">2024-11-17</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nav">
+        <div class="nav__upperNav">
+          <img
+            src="./img/home-1-svgrepo-com.svg"
+            alt="Home"
+            class="nav__upperNavLink"
+            width="30"
+            height="30"
+            id="homeLink"
+          />
+          <img
+            src="./img/person-silhouette-svgrepo-com.svg"
+            alt="About Me"
+            class="nav__upperNavLink"
+            width="30"
+            height="30"
+            id="aboutMeLink"
+          />
+          <img
+            src="./img/graduation-hat-svgrepo-com.svg"
+            alt="Resume"
+            class="nav__upperNavLink"
+            width="30"
+            height="30"
+            id="resumeLink"
+          />
+        </div>
+        <div class="nav__lowerNav">
+          <img
+            src="./img/right-arrow-backup-2-svgrepo-com.svg"
+            alt="forward"
+            class="nav__forward"
+            width="40"
+            height="40"
+            id="next"
+          />
+          <img
+            src="./img/left-arrow-backup-2-svgrepo-com.svg"
+            alt="back"
+            class="nav__back"
+            width="40"
+            height="40"
+            id="previous"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

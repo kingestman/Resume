@@ -1,93 +1,99 @@
 @use '../util' as u;
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: u.$font;
-    background-image: linear-gradient(#9d2bf3, #5050f5);
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: u.$font;
+  background-image: linear-gradient(#9d2bf3, #5050f5);
+  width: 100vw;
+  height: 100vh;
 }
 
 input,
 button {
-    font-family: u.$font;
+  font-family: u.$font;
 }
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .active {
-    display: block !important;
+  display: block !important;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    li {
-        list-style-type: none;
-        color: var(--pharagraph-text-color);
-        font-size: u.rem(15);
-        margin-block-end: 10px;
-    }
+  li {
+    list-style-type: none;
+    color: var(--pharagraph-text-color);
+    font-size: u.rem(15);
+    margin-block-end: 10px;
+  }
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #555 transparent;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
 }
 
 ::-webkit-scrollbar {
-    height: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 3px;
+  background: #555;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #777;
+  background: #777;
 }
 
 .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 
-    &:focus {
-        left: 0;
-        width: auto;
-        height: auto;
-        background-color: #fff;
-        padding: 0.5rem;
-        border: 1px solid;
-    }
+  &:focus {
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    padding: 0.5rem;
+    border: 1px solid;
+  }
 }
 
 .hover-fade {
-    &:hover {
-        opacity: 0.9;
-    }
+  &:hover {
+    opacity: 0.9;
+  }
 }

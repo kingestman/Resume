@@ -1,220 +1,266 @@
 @use '../util' as u;
 
 .main-info {
+  display: flex;
+  height: 80vh;
+
+  &__photoSection {
+    border-radius: 30px 0px 0px 30px;
+    padding: 50px 30px 0px;
+    background-color: var(--photo-section-bg);
+    min-width: 380px;
+    overflow: auto;
+  }
+
+  &__photoSection-container {
+    margin-block-end: 20px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    &__photoSection {
-        height: 80vh;
-        border-radius: 30px 0px 0px 30px;
-        padding: 50px 30px 0px;
-        background-color: var(--photo-section-bg);
-        min-width: 380px;
-        overflow: auto;
+  &__photo {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 3px solid var(--border-color);
+    margin-block-end: 30px;
+  }
+
+  &__socialLinks {
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    margin-block-end: 50px;
+  }
+
+  &__socialLink img {
+    width: 25px;
+    height: 25px;
+  }
+
+  &__downloadCv {
+    width: fit-content;
+    margin: auto;
+  }
+
+  &__downloadCv button {
+    border-radius: 30px;
+    border: 2px solid var(--border-color);
+    background-color: var(--button-bg-color);
+    width: 170px;
+    height: 46px;
+    box-shadow: 0 10px 10px -8px var(--button-shadow-color);
+    font-size: u.rem(15);
+    color: var(--button-text-color);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: var(--button-bg-color-hover);
+      color: var(--button-text-color-hover);
     }
+  }
 
-    &__photoSection-container {
-        margin-block-end: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+  &__generalInfo {
+    position: relative;
+    width: 50vw;
+  }
+
+  &__intro,
+  &__aboutMe,
+  &__resume,
+  &__contact {
+    padding: 60px;
+    background-color: var(--generalInfo-section-bg);
+    border-radius: 0px 30px 30px 0px;
+    width: 50vw;
+    height: 80vh;
+    min-width: 510px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    transition: display 0.3s ease-in;
+    display: none;
+
+    @media (max-width: u.em(1000)) {
+      height: 100%;
+      border-radius: 0px;
+      width: 100%;
+      min-width: 0px;
+      padding: 30px;
     }
+  }
 
-    &__photo {
-        border-radius: 50%;
-        width: 180px;
-        height: 180px;
-        border: 3px solid var(--border-color);
-        margin-block-end: 30px;
+  &__introInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__aboutMeContainer {
+    display: flex;
+    gap: 30px;
+    margin-block-end: 50px;
+  }
+
+  &__mySkills {
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+    gap: 30px;
+    margin-block-end: 50px;
+  }
+
+  &__mySkills img {
+    width: 50px;
+    min-width: 45px;
+  }
+
+  &__resumeContainer {
+    display: flex;
+    gap: 30px;
+    margin-block-end: 50px;
+  }
+
+  &__skill {
+    margin-bottom: 15px;
+    width: 15vw;
+  }
+
+  &__skillHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  &__bar {
+    width: 100%;
+    height: 8px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__fill {
+    height: 100%;
+    background: #4f6ef7;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.6s ease;
+  }
+
+  &__certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(u.rem(320), 1fr));
+    gap: 20px;
+  }
+
+  &__certificate {
+    border: 2px solid #444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 144px;
+
+    @media screen and (max-width: u.em(1000)) {
+      height: 170px;
     }
+  }
 
-    &__socialLinks {
-        display: flex;
-        gap: 10px;
-        align-content: center;
-        justify-content: center;
-        margin-block-end: 50px;
+  &__certificateInfo {
+    padding: 20px 25px;
+  }
+
+  &__certificateLogo {
+    width: 100px;
+    height: 80px;
+  }
+
+  &__certificateLogoC {
+    background-color: #444;
+    height: 144px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    @media screen and (max-width: u.em(1000)) {
+      height: 170px;
     }
+  }
 
-    &__socialLink img {
-        width: 25px;
-        height: 25px;
-    }
+  &__experiences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(u.rem(30), 1fr));
+    gap: 20px;
+  }
 
-    &__downloadCv {
-        width: fit-content;
-        margin: auto;
-    }
+  &__experience {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid #444;
+  }
 
-    &__downloadCv button {
-        border-radius: 30px;
-        border: 2px solid var(--border-color);
-        background-color: var(--button-bg-color);
-        width: 170px;
-        height: 46px;
-        box-shadow: 0 10px 10px -8px var(--button-shadow-color);
-        font-size: u.rem(15);
-        color: var(--button-text-color);
-        cursor: pointer;
-        transition: all 0.4s ease-in-out;
+  &__experienceInfo {
+    padding: 20px 25px;
+  }
 
-        &:hover {
-            background-color: var(--button-bg-color-hover);
-            color: var(--button-text-color-hover);
-        }
-    }
-
-    &__genralInfo {
-        position: relative;
-        height: 80vh;
-        width: 50vw;
-    }
-
-    &__intro,
-    &__aboutMe,
-    &__resume,
-    &__contact {
-        padding: 60px;
-        background-color: var(--generalInfo-section-bg);
-        border-radius: 0px 30px 30px 0px;
-        height: 80vh;
-        width: 50vw;
-        min-width: 510px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-y: auto;
-        transition: display 0.3s ease-in;
-        display: none;
-    }
-
-    &__introInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__aboutMeContainer {
-        display: flex;
-        gap: 30px;
-        margin-block-end: 50px;
-    }
-
-    &__mySkills {
-        display: flex;
-        justify-content: space-between;
-        overflow-y: auto;
-        gap: 30px;
-        margin-block-end: 50px;
-    }
-
-    &__mySkills img {
-        width: 50px;
-        min-width: 45px;
-    }
-
-    &__resumeContainer {
-        display: flex;
-        gap: 30px;
-        margin-block-end: 50px;
-    }
-
-    &__skill {
-        margin-bottom: 15px;
-        width: 15vw;
-    }
-
-    &__skillHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 6px;
-    }
-
-    &__bar {
-        width: 100%;
-        height: 8px;
-        background: #333;
-        border: 1px solid #555;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    &__fill {
-        height: 100%;
-        background: #4f6ef7;
-        border-radius: 10px 0 0 10px;
-        transition: width 0.6s ease;
-    }
-
-    &__certificates {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(u.rem(390), 1fr));
-        gap: 20px;
-    }
-
-    &__certificate {
-        border: 2px solid #444;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        height: 144px;
-    }
-
-    &__certificateInfo {
-        padding: 20px 25px;
-    }
-
-    &__certificateLogo {
-        width: 100px;
-        height: 80px;
-    }
-
-    &__certificateLogoC {
-        background-color: #444;
-        height: 144px;
-        width: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-    }
-
-    &__experiences {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(u.rem(340), 1fr));
-        gap: 20px;
-    }
-
-    &__experience {
-        display: flex;
-        align-items: center;
-        height: 120px;
-        border-radius: 8px;
-        border: 2px solid #444;
-    }
-
-    &__experienceeInfo {
-        padding: 20px 25px;
-    }
-
-    &__experienceDate {
-        font-size: 0.9rem;
-        color: #777;
-    }
+  &__experienceDate {
+    font-size: 0.9rem;
+    color: #777;
+  }
 }
 
 @media (max-width: u.em(1300)) {
-    .main-info {
-        &__aboutMeContainer,
-        &__resumeContainer {
-            flex-direction: column;
-        }
-
-        &__skill {
-            width: 300px;
-        }
+  .main-info {
+    &__aboutMeContainer,
+    &__resumeContainer {
+      flex-direction: column;
     }
+
+    &__skill {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: u.em(1000)) {
+  .main-info {
+    height: 100%;
+    width: 100%;
+  }
+
+  .main-info__photoSection {
+    display: none;
+  }
+
+  .main-info__generalInfo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav {
+    position: absolute;
+    margin: 0;
+    height: 90vh;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px !important;
+  }
+  .nav__upperNavLink,
+  .nav__forward,
+  .nav__back {
+    width: 30px !important;
+    height: 30px !important;
+  }
 }

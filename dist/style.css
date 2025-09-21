@@ -43,6 +43,12 @@ ul li {
   margin-block-end: 10px;
 }
 
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #555 transparent;
@@ -200,11 +206,17 @@ p.date {
   display: flex;
 }
 
+@media (max-width: 1000px) {
+  .main {
+    width: 100%;
+    height: 100%;
+  }
+}
 .main-info {
   display: flex;
+  height: 80vh;
 }
 .main-info__photoSection {
-  height: 80vh;
   border-radius: 30px 0px 0px 30px;
   padding: 50px 30px 0px;
   background-color: var(--photo-section-bg);
@@ -256,17 +268,16 @@ p.date {
   background-color: var(--button-bg-color-hover);
   color: var(--button-text-color-hover);
 }
-.main-info__genralInfo {
+.main-info__generalInfo {
   position: relative;
-  height: 80vh;
   width: 50vw;
 }
 .main-info__intro, .main-info__aboutMe, .main-info__resume, .main-info__contact {
   padding: 60px;
   background-color: var(--generalInfo-section-bg);
   border-radius: 0px 30px 30px 0px;
-  height: 80vh;
   width: 50vw;
+  height: 80vh;
   min-width: 510px;
   position: absolute;
   left: 0;
@@ -274,6 +285,15 @@ p.date {
   overflow-y: auto;
   transition: display 0.3s ease-in;
   display: none;
+}
+@media (max-width: 62.5em) {
+  .main-info__intro, .main-info__aboutMe, .main-info__resume, .main-info__contact {
+    height: 100%;
+    border-radius: 0px;
+    width: 100%;
+    min-width: 0px;
+    padding: 30px;
+  }
 }
 .main-info__introInfo {
   display: flex;
@@ -330,7 +350,7 @@ p.date {
 }
 .main-info__certificates {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24.375rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 20px;
 }
 .main-info__certificate {
@@ -339,6 +359,11 @@ p.date {
   display: flex;
   align-items: center;
   height: 144px;
+}
+@media screen and (max-width: 62.5em) {
+  .main-info__certificate {
+    height: 170px;
+  }
 }
 .main-info__certificateInfo {
   padding: 20px 25px;
@@ -356,9 +381,14 @@ p.date {
   justify-content: center;
   border-radius: 8px;
 }
+@media screen and (max-width: 62.5em) {
+  .main-info__certificateLogoC {
+    height: 170px;
+  }
+}
 .main-info__experiences {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21.25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1.875rem, 1fr));
   gap: 20px;
 }
 .main-info__experience {
@@ -368,7 +398,7 @@ p.date {
   border-radius: 8px;
   border: 2px solid #444;
 }
-.main-info__experienceeInfo {
+.main-info__experienceInfo {
   padding: 20px 25px;
 }
 .main-info__experienceDate {
@@ -382,6 +412,34 @@ p.date {
   }
   .main-info__skill {
     width: 300px;
+  }
+}
+@media (max-width: 62.5em) {
+  .main-info {
+    height: 100%;
+    width: 100%;
+  }
+  .main-info__photoSection {
+    display: none;
+  }
+  .main-info__generalInfo {
+    width: 100%;
+    height: 100%;
+  }
+  .nav {
+    position: absolute;
+    margin: 0;
+    height: 90vh;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 50px !important;
+  }
+  .nav__upperNavLink,
+  .nav__forward,
+  .nav__back {
+    width: 30px !important;
+    height: 30px !important;
   }
 }
 .nav {
