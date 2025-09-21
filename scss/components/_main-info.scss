@@ -239,6 +239,11 @@
     width: 100%;
   }
 
+  .main-info__experience {
+    height: auto;
+    overflow: hidden;
+  }
+
   .main-info__photoSection {
     display: none;
   }
@@ -256,7 +261,13 @@
     top: 50%;
     transform: translate(0, -50%);
     width: 50px !important;
+    justify-content: end !important;
   }
+
+  .nav__upperNav {
+    display: none !important;
+  }
+
   .nav__upperNavLink,
   .nav__forward,
   .nav__back {
