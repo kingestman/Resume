@@ -25,6 +25,8 @@
     height: 180px;
     border: 3px solid var(--border-color);
     margin-block-end: 30px;
+    object-fit: cover;
+    object-position: 0 -57px;
   }
 
   &__socialLinks {
